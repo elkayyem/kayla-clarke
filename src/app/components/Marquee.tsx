@@ -17,10 +17,11 @@ export function Marquee() {
             style={{
               fontFamily: "'Playfair Display', serif",
               fontStyle: "italic",
-              fontSize: "1.05rem",
-              letterSpacing: "0.04em",
-              color: "#F5EFDC",
-              padding: "0 1.5rem",
+              fontWeight: 600,
+              fontSize: "1.15rem",
+              letterSpacing: "0.02em",
+              color: "#1C1308",
+              padding: "0 1.75rem",
             }}
           >
             {item}
@@ -32,7 +33,7 @@ export function Marquee() {
   );
 
   return (
-    <div className="marquee" style={{ background: "#1C1308", padding: "0.85rem 0" }}>
+    <div className="marquee" style={{ background: "#F5EFDC", padding: "1rem 0" }}>
       <div className="marquee-track">
         <Group />
         <Group ariaHidden />

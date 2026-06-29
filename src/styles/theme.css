@@ -237,6 +237,9 @@
 .marquee {
   overflow: hidden;
   white-space: nowrap;
+  /* Fade the text slightly at both ends */
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
 }
 
 .marquee-track {
