@@ -52,8 +52,8 @@ export function About() {
               className="absolute"
               style={{ left: "58%", top: "14%", background: "#1C1308", color: "#F5EFDC", padding: "1rem 1.25rem" }}
             >
-              <p style={{ fontFamily: "'Playfair Display', serif", fontSize: "2rem", fontWeight: 900, lineHeight: 1 }}>3+</p>
-              <p style={{ fontSize: "0.72rem", letterSpacing: "0.08em", opacity: 0.7, marginTop: "2px" }}>YEARS CREATING</p>
+              <p style={{ fontFamily: "'Playfair Display', serif", fontSize: "2rem", fontWeight: 900, lineHeight: 1 }}>100%</p>
+              <p style={{ fontSize: "0.72rem", letterSpacing: "0.08em", opacity: 0.7, marginTop: "2px" }}>AUTHENTIC</p>
             </div>
           </div>
 
@@ -70,8 +70,9 @@ export function About() {
                 what makes them stop, watch, and buy.
               </p>
               <p>
-                I've worked with 50+ brands across skincare, home, tech, fashion, and food —
-                and every collaboration is built on trust, communication, and content that converts.
+                Every collaboration starts the same way — I get to know your brand, your voice,
+                and your audience, then create content that feels like a genuine recommendation,
+                not an ad.
               </p>
             </div>
 

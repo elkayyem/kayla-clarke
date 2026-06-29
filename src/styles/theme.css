@@ -135,11 +135,11 @@
 
   html {
     font-size: var(--font-size);
-    font-family: 'Nunito', sans-serif;
+    font-family: 'EB Garamond', serif;
   }
 
   body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'EB Garamond', serif;
   }
 
   h1, h2, h3 {
@@ -177,13 +177,79 @@
     font-size: var(--text-base);
     font-weight: var(--font-weight-medium);
     line-height: 1.5;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'EB Garamond', serif;
   }
 
   input, textarea {
     font-size: var(--text-base);
     font-weight: var(--font-weight-normal);
     line-height: 1.5;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'EB Garamond', serif;
   }
+}
+
+/* ------------------------------------------------------------------ */
+/* Custom circular cursor (desktop / fine-pointer devices only)        */
+/* ------------------------------------------------------------------ */
+@media (pointer: fine) {
+  body.custom-cursor,
+  body.custom-cursor * {
+    cursor: none !important;
+  }
+}
+
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1.5px solid #B87461;
+  border-radius: 9999px;
+  pointer-events: none;
+  z-index: 9999;
+  transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+  will-change: transform;
+}
+
+.cursor-ring::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: #B87461;
+  border-radius: 9999px;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-ring.cursor-grow {
+  width: 54px;
+  height: 54px;
+  background: rgba(184, 116, 97, 0.12);
+  border-color: rgba(184, 116, 97, 0.6);
+}
+
+/* ------------------------------------------------------------------ */
+/* Marquee banner — scrolls slowly to the left                         */
+/* ------------------------------------------------------------------ */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-track {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  animation: marquee-left 40s linear infinite;
+}
+
+@keyframes marquee-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
 }

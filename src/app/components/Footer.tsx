@@ -13,10 +13,10 @@ export function Footer() {
               KAYLA<br />CLARKE
             </p>
             <p style={{ fontSize: "0.82rem", lineHeight: 1.7, color: "#A89070", maxWidth: "220px", marginBottom: "1.25rem" }}>
-              UGC creator, mom of 3, and the most authentic voice your brand hasn't worked with yet.
+              UGC content creator making authentic, scroll-stopping content that feels like a real recommendation.
             </p>
             <div className="flex gap-3">
-              <a href="#" style={{ color: "#A89070" }} className="hover:text-[#F5EFDC] transition-colors">
+              <a href="https://instagram.com/kaylaclarke.ugc" target="_blank" rel="noopener noreferrer" style={{ color: "#A89070" }} className="hover:text-[#F5EFDC] transition-colors">
                 <Instagram className="w-4 h-4" />
               </a>
               <a href="mailto:kayla@kaylaclarke.co" style={{ color: "#A89070" }} className="hover:text-[#F5EFDC] transition-colors">

@@ -29,18 +29,24 @@ export function Services() {
           <div style={{ width: "100%", height: "1px", background: "rgba(28,19,8,0.2)", marginTop: "1.5rem" }} />
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-0">
-          {services.map((svc, i) => {
+        {/* Outer top + left border on the container, plus bottom + right on every
+            cell, gives a complete grid regardless of column count (1 / 2 / 3). */}
+        <div
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-0"
+          style={{
+            borderTop: "1px solid rgba(28,19,8,0.15)",
+            borderLeft: "1px solid rgba(28,19,8,0.15)",
+          }}
+        >
+          {services.map((svc) => {
             const Icon = svc.icon;
-            const isLastRow = i >= 3;
-            const isLastCol = (i + 1) % 3 === 0;
             return (
               <div
                 key={svc.title}
                 className="group p-8"
                 style={{
-                  borderBottom: !isLastRow ? "1px solid rgba(28,19,8,0.15)" : undefined,
-                  borderRight: !isLastCol ? "1px solid rgba(28,19,8,0.15)" : undefined,
+                  borderBottom: "1px solid rgba(28,19,8,0.15)",
+                  borderRight: "1px solid rgba(28,19,8,0.15)",
                 }}
               >
                 <Icon className="w-5 h-5 mb-5" style={{ color: "#1C1308", opacity: 0.6 }} />
@@ -54,7 +60,6 @@ export function Services() {
             );
           })}
         </div>
-        <div style={{ width: "100%", height: "1px", background: "rgba(28,19,8,0.2)" }} />
       </div>
     </section>
   );

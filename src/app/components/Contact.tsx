@@ -119,10 +119,10 @@ export function Contact() {
                     onChange={e => setForm({ ...form, pkg: e.target.value })}
                   >
                     <option value="">Select a package...</option>
-                    <option>Starter ($250)</option>
-                    <option>Creator ($650/mo)</option>
-                    <option>Brand Partner (Custom)</option>
-                    <option>Custom / One-Off</option>
+                    <option>Starter</option>
+                    <option>Creator</option>
+                    <option>Brand Partner</option>
+                    <option>Not sure yet</option>
                   </select>
                 </div>
                 <div>
