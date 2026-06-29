@@ -29,8 +29,8 @@ export function Hero() {
               style={{
                 fontFamily: "'Playfair Display', serif",
                 fontWeight: 900,
-                fontSize: "clamp(3rem, 13vw, 9.5rem)",
-                lineHeight: 0.88,
+                fontSize: "clamp(3.8rem, 10vw, 7.5rem)",
+                lineHeight: 0.9,
                 letterSpacing: "-0.02em",
                 color: "#1C1308",
                 textTransform: "uppercase",
@@ -44,25 +44,28 @@ export function Hero() {
               style={{
                 fontFamily: "'Playfair Display', serif",
                 fontStyle: "italic",
-                fontWeight: 400,
+                fontWeight: 700,
                 fontSize: "clamp(1.1rem, 2.5vw, 1.6rem)",
                 color: "#1C1308",
                 marginTop: "1.2rem",
                 letterSpacing: "0.05em",
               }}
             >
-              UGC CONTENT CREATOR
+              UGC Content Creator
             </p>
 
+            {/* Divider line under the subtitle */}
+            <div style={{ width: "100%", height: "1px", background: "rgba(28,19,8,0.2)", marginTop: "1.5rem" }} />
+
             {/* Contact lines — email + instagram share identical styling */}
-            <div className="flex flex-col gap-2 mt-4">
+            <div className="flex flex-col gap-2.5 mt-7">
               <a
                 href="mailto:kayla@kaylaclarke.co"
                 className="flex items-center gap-2"
                 style={contactLineStyle}
               >
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                KAYLA@KAYLACLARKE.CO
+                kayla@kaylaclarke.co
               </a>
               <a
                 href="https://instagram.com/kaylaclarke.ugc"
@@ -72,7 +75,7 @@ export function Hero() {
                 style={contactLineStyle}
               >
                 <Instagram className="w-4 h-4 flex-shrink-0" />
-                KAYLACLARKE.UGC
+                kaylaclarke.ugc
               </a>
             </div>
           </div>
@@ -103,8 +106,8 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Full-bleed moving banner */}
-      <div className="mt-12">
+      {/* Moving banner — constrained to the page content width */}
+      <div className="max-w-5xl mx-auto px-6 sm:px-8 mt-12">
         <Marquee />
       </div>
 
@@ -115,23 +118,7 @@ export function Hero() {
         ))}
       </div>
 
-      {/* CTA to rest of page */}
-      <div className="text-center pb-12">
-        <a
-          href="#services"
-          style={{
-            fontFamily: "'Playfair Display', serif",
-            fontStyle: "italic",
-            fontSize: "1rem",
-            letterSpacing: "0.1em",
-            color: "#1C1308",
-            borderBottom: "1px solid rgba(28,19,8,0.4)",
-            paddingBottom: "2px",
-          }}
-        >
-          View Services & Packages ↓
-        </a>
-      </div>
+      <div className="pb-12" />
     </section>
   );
 }

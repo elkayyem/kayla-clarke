@@ -18,7 +18,7 @@ export function Marquee() {
               fontFamily: "'Playfair Display', serif",
               fontStyle: "italic",
               fontWeight: 600,
-              fontSize: "1.15rem",
+              fontSize: "1.45rem",
               letterSpacing: "0.02em",
               color: "#1C1308",
               padding: "0 1.75rem",
@@ -26,7 +26,7 @@ export function Marquee() {
           >
             {item}
           </span>
-          <span style={{ color: "#B87461", fontSize: "0.9rem" }}>✦</span>
+          <span style={{ color: "#B87461", fontSize: "1.1rem" }}>✦</span>
         </span>
       ))}
     </div>
