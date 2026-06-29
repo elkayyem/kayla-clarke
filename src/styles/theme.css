@@ -253,3 +253,14 @@
 @media (prefers-reduced-motion: reduce) {
   .marquee-track { animation: none; }
 }
+
+/* On mobile, offset anchor jumps so the sticky nav bar doesn't cover headings */
+@media (max-width: 767px) {
+  #portfolio,
+  #services,
+  #packages,
+  #about,
+  #contact {
+    scroll-margin-top: 4rem;
+  }
+}

@@ -1,4 +1,5 @@
 import { CursorRing } from "./components/CursorRing";
+import { MobileNav } from "./components/MobileNav";
 import { Hero } from "./components/Hero";
 import { Services } from "./components/Services";
 import { Packages } from "./components/Packages";
@@ -10,6 +11,7 @@ export default function App() {
   return (
     <div className="min-h-screen">
       <CursorRing />
+      <MobileNav />
       <Hero />
       <Services />
       <Packages />
