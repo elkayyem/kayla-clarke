@@ -253,6 +253,15 @@
   to   { transform: translateX(-50%); }
 }
 
+.marquee-text { font-size: 1.45rem; }
+.marquee-star { font-size: 1.1rem; }
+
+/* Mobile: banner text 25% smaller */
+@media (max-width: 767px) {
+  .marquee-text { font-size: 1.0875rem; }
+  .marquee-star { font-size: 0.825rem; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .marquee-track { animation: none; }
 }

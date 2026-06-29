@@ -14,11 +14,11 @@ export function Marquee() {
       {items.map((item, i) => (
         <span key={`${item}-${i}`} className="inline-flex items-center">
           <span
+            className="marquee-text"
             style={{
               fontFamily: "'Playfair Display', serif",
               fontStyle: "italic",
               fontWeight: 600,
-              fontSize: "1.45rem",
               letterSpacing: "0.02em",
               color: "#1C1308",
               padding: "0 1.75rem",
@@ -26,7 +26,7 @@ export function Marquee() {
           >
             {item}
           </span>
-          <span style={{ color: "#B87461", fontSize: "1.1rem" }}>✦</span>
+          <span className="marquee-star" style={{ color: "#B87461" }}>✦</span>
         </span>
       ))}
     </div>

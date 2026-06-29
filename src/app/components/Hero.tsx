@@ -29,7 +29,7 @@ export function Hero() {
               style={{
                 fontFamily: "'Playfair Display', serif",
                 fontWeight: 900,
-                fontSize: "clamp(3.8rem, 10vw, 7.5rem)",
+                fontSize: "clamp(4.37rem, 10vw, 7.5rem)",
                 lineHeight: 0.9,
                 letterSpacing: "-0.02em",
                 color: "#1C1308",
@@ -54,8 +54,8 @@ export function Hero() {
               UGC Content Creator
             </p>
 
-            {/* Divider line under the subtitle */}
-            <div style={{ width: "100%", height: "1px", background: "rgba(28,19,8,0.2)", marginTop: "1.5rem" }} />
+            {/* Divider line under the subtitle (hidden on mobile) */}
+            <div className="hidden md:block" style={{ width: "100%", height: "1px", background: "rgba(28,19,8,0.2)", marginTop: "1.5rem" }} />
 
             {/* Contact lines — email + instagram share identical styling */}
             <div className="flex flex-col gap-2.5 mt-7">
